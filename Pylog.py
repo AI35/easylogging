@@ -1,5 +1,5 @@
 # Created By : Ali B Othman
-# V 1.1.0
+# V 1.1.1
 # Simple log lib for python
 
 import logging
@@ -47,9 +47,9 @@ formated = '%(asctime)s - %(levelname)s - %(message)s'
 logging.basicConfig(level = logging.DEBUG, format=formated)
 
 
-Dir = '%s\logs' % (os.path.dirname(os.path.abspath(__file__)))
+Dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs')
 logFile = 'Log %s.log' % (strftime("%Y-%m-%d %Hh-%Mm-%Ss", gmtime()))
-Dirfilelog = '%s\%s' % (Dir, logFile)
+Dirfilelog = os.path.join(Dir, logFile)
 filename = 'log.py'
 name = 'Loglib'
 
