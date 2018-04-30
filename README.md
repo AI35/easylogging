@@ -43,21 +43,21 @@
       --logfile            Create log file
   ```
 - After first run you will see new file **logging.conf** :
-	- Change **level** number to display log in console **without** --logging (0 display all level).
-  ```
-    level=50
-  ```
+  - Change **level** number to display log in console **without** --logging (0 display all level).
+  	```
+  	  level=50
+  	```
   - Change **file_level** number to set level in log file **with** --logfile (50 hide all level).
-  ```
-    file_level=0
-  ```
+  	```
+   	  file_level=0
+  	```
   - **in Version 1.1.0** : Now you can show and hide error info from **logging.conf** :
   	###### - Show Error info (Pylog.error(msg, exc_info))
 	###### - True or False or None
 	###### - * (None) means that exc_info takes the value entered from the user, example: Pylog.error(msg, exc_info=True)
-  ```
-  exc_info=None
-  ```
+  	```
+  	  exc_info=None
+  	```
 - Level table :
 
     | Level  | Numeric value |
