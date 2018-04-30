@@ -2,7 +2,7 @@
 ###### Simple and Easy Logger lib for python
 
 [![Pylog](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
-[![version](https://img.shields.io/badge/version-1.0.0-green.svg)]()
+[![version](https://img.shields.io/badge/version-1.1.0-green.svg)]()
 [![status](https://img.shields.io/badge/status-Beta-yellowgreen.svg)]()
 [![python](https://img.shields.io/badge/python-3-blue.svg)](http://www.python.org/download/)
 [![windows](https://img.shields.io/badge/windows-tested-brightgreen.svg)]()
@@ -50,6 +50,13 @@
   - Change **file_level** number to set level in log file **with** --logfile (50 hide all level).
   ```
     file_level=0
+  ```
+  - **in Version 1.1.0** : Now you can show and hide error info from **logging.conf** :
+  	###### - Show Error info (Pylog.error(msg, exc_info))
+	###### - True or False or None
+	###### - * (None) means that exc_info takes the value entered from the user, example: Pylog.error(msg, exc_info=True)
+  ```
+  exc_info=None
   ```
 - Level table :
 
