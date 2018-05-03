@@ -33,6 +33,12 @@
     
     Pylog.logname('Filename.py')
   ```
+- Use the functions you need:
+  - Pylog.critical(msg)
+  - Pylog.error(msg, exc_info) **default: exc_info=False**
+  - Pylog.warning(msg) **or** Pylog.warn(msg)
+  - Pylog.info(msg)
+  - Pylog.debug(msg)
 - You can start logging from Cmd or PowerShell :
   ```
     $ Python yourfile.py --logging --logfile
