@@ -65,6 +65,8 @@
   	```
   	  exc_info=None
   	```
+  - **in Version 1.1.2** : Fix DeprecationWarning:
+  	###### - Fix warn function
 - Level table :
 
     | Level  | Numeric value |
