@@ -1,5 +1,5 @@
 # Created By : Ali B Othman
-# V 1.1.1
+# V 1.1.2
 # Simple log lib for python
 
 import logging
