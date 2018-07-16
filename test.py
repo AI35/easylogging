@@ -8,12 +8,10 @@ from Pylog import *
 name = 'test.py'
 logname(name)
 ######################
-
 debug('logs debug done')
 info('Start log')
 warning('Warning')
 debug('Debugging ..')
-warn('End.')
 critical('Stopped !!')
 
 try:

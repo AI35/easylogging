@@ -90,8 +90,6 @@ def debug(msg):
 	logger.debug(logname.name+' : '+ msg)
 def info(msg):
 	logger.info(logname.name+' : '+ msg)
-def warn(msg):
-	logger.warn(logname.name+' : '+ msg)
 def critical(msg):
 	logger.critical(logname.name+' : '+ msg)
 def error(msg, exc_info = False):
@@ -110,7 +108,6 @@ if __name__ == "__main__":
 	info('Start log')
 	warning('Warning')
 	debug('Debugging...')
-	warn('End.')
 	critical('Stopped !!')
 	
 	try:
