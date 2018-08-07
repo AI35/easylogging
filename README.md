@@ -17,6 +17,7 @@
 - **Important(To Work --logfile)** : You need to put Pylog.py in same folder with your main file.
 - Maybe later I'm thinking of adding more features.
 - I am created this lib because i want use easy logging lib.
+- **Known Bug** : You need to place pylog.py next to the file that uses this lib.
 
 ## Installation
 
