@@ -68,6 +68,12 @@
   	```
   - **in Version 1.1.2** : Fix DeprecationWarning:
   	###### - Fix warn function
+	
+  - **in Version 1.1.3** : Fix input msg:
+  	###### - You can know input (int or any varible) , example:
+	```
+		Pylog.error(msg) ; msg = 10
+	```
 - Level table :
 
     | Level  | Numeric value |
@@ -95,4 +101,4 @@ Pylog
 
    https://github.com/AI35/Pylog/blob/master/LICENSE
 ```
-###### ALI .B .OTH - ORG : LinePY �
+###### ALI .B .OTH - ORG : LinePY  

@@ -1,5 +1,5 @@
 # Created By : Ali B Othman
-# V 1.1.2
+# V 1.1.3
 # Simple log lib for python
 
 import logging
@@ -51,7 +51,7 @@ Dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs')
 logFile = 'Log %s.log' % (strftime("%Y-%m-%d %Hh-%Mm-%Ss", gmtime()))
 Dirfilelog = os.path.join(Dir, logFile)
 filename = 'log.py'
-name = 'Loglib'
+name = 'unknown file'
 
 logger = logging.getLogger(__name__)
 logging.disable(level)
@@ -85,32 +85,18 @@ def logname(fname = name):
 	logname.name = fname
 
 def warning(msg):
-	logger.warning(logname.name+' : '+ msg)
+	logger.warning(logname.name+' : '+ str(msg))
 def debug(msg):
-	logger.debug(logname.name+' : '+ msg)
+	logger.debug(logname.name+' : '+ str(msg))
 def info(msg):
-	logger.info(logname.name+' : '+ msg)
+	logger.info(logname.name+' : '+ str(msg))
 def critical(msg):
-	logger.critical(logname.name+' : '+ msg)
+	logger.critical(logname.name+' : '+ str(msg))
 def error(msg, exc_info = False):
 	if exc == 'True':
-		logger.error(logname.name+' : '+ msg, exc_info = True)
+		logger.error(logname.name+' : '+ str(msg), exc_info = True)
 	elif exc == 'False':
-		logger.error(logname.name+' : '+ msg, exc_info = False)
+		logger.error(logname.name+' : '+ str(msg), exc_info = False)
 	else:
-		logger.error(logname.name+' : '+ msg, exc_info = exc_info)
+		logger.error(logname.name+' : '+ str(msg), exc_info = exc_info)
 
-if __name__ == "__main__":
-
-#   Test Logging
-	logname(name)
-
-	info('Start log')
-	warning('Warning')
-	debug('Debugging...')
-	critical('Stopped !!')
-	
-	try:
-		Test_Error
-	except Exception as e:
-		error('**Error**', exc_info = True)
