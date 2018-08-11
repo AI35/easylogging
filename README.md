@@ -2,7 +2,7 @@
 ###### Simple and Easy Logger lib for python
 
 [![Pylog](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
-[![version](https://img.shields.io/badge/version-1.1.1-green.svg)]()
+[![version](https://img.shields.io/badge/version-1.1.3-green.svg)]()
 [![status](https://img.shields.io/badge/status-Beta-yellowgreen.svg)]()
 [![python](https://img.shields.io/badge/python-3-blue.svg)](http://www.python.org/download/)
 [![windows](https://img.shields.io/badge/windows-tested-brightgreen.svg)]()
