@@ -24,6 +24,6 @@ debug(3.4)
 print('########### TEST ERROR ###########')
 try:
 	Test_Error
-except Exception as e:
+except Exception :
 	error('**Error**', exc_info = True)
 

@@ -6,7 +6,7 @@ import logging
 from time import gmtime, strftime
 import sys, os
 import logging.config
-from configparser import ConfigParser  
+from configparser import ConfigParser
 
 config = ConfigParser()
 
@@ -71,14 +71,14 @@ try:
 		logger.addHandler(handler)
 		logging.disable(prop)
 
-except:
+except Exception:
 	pass
 
 try:
 	if '--logging' in sys.argv:
 		logging.disable(0)
 		logger.propagate = True
-except:
+except Exception:
 	pass
 
 def logname(fname = name):
