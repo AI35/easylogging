@@ -1,12 +1,11 @@
 # Created By : Ali B Othman
-# Test V 1.1.3
+# Test V 1.2.0
 # Simple Test File
 
 from Pylog import *
 
 ########## very important ############
-name = 'test.py'
-logname(name)
+logname(__file__)
 ######################
 print('########### TEST DEBUG ###########')
 debug('logs debug done')
@@ -25,5 +24,10 @@ print('########### TEST ERROR ###########')
 try:
 	Test_Error
 except Exception :
-	error('**Error**', exc_info = True)
+	error('**Error : exc_info = True**', exc_info = True)
 
+print('########### TEST ERROR ###########')
+try:
+	Test_Error
+except Exception :
+	error('**Error : exc_info = False**', exc_info = False)
