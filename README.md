@@ -60,17 +60,17 @@
   	```
    	  file_level=0
   	```
-  - **in Version 1.1.0** : Now you can show and hide error info from **logging.conf** :
+ - **in Version 1.1.0** : Now you can show and hide error info from **logging.conf** :
   	###### - Show Error info (Pylog.error(msg, exc_info))
 	###### - True or False or None
 	###### - * (None) means that exc_info takes the value entered from the user, example: Pylog.error(msg, exc_info=True)
   	```
   	  exc_info=None
   	```
-  - **in Version 1.1.2** : Fix DeprecationWarning:
+ - **in Version 1.1.2** : Fix DeprecationWarning:
   	###### - Fix warn function
 	
-  - **in Version 1.1.3** : Fix input msg:
+ - **in Version 1.1.3** : Fix input msg:
   	###### - You can know input (int or any value) , example:
 	```
 	  Pylog.error(msg) ; msg = 10
