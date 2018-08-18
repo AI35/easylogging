@@ -2,8 +2,8 @@
 ###### Simple and Easy Logger lib for python
 
 [![Pylog](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
-[![version](https://img.shields.io/badge/version-1.1.3-green.svg)]()
-[![status](https://img.shields.io/badge/status-Beta-yellowgreen.svg)]()
+[![version](https://img.shields.io/badge/version-1.2.0-green.svg)]()
+[![status](https://img.shields.io/badge/status-stable-brightgreen.svg)]()
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/677f082650b54782b947b429dd1c35ce)](https://www.codacy.com/project/alosh.othman55/Pylog/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AI35/Pylog&amp;utm_campaign=Badge_Grade_Dashboard)
 [![python](https://img.shields.io/badge/python-3-blue.svg)](http://www.python.org/download/)
 [![windows](https://img.shields.io/badge/windows-tested-brightgreen.svg)]()
@@ -18,7 +18,7 @@
 - **Important(To Work --logfile)** : You need to put Pylog.py in same folder with your main file.
 - Maybe later I'm thinking of adding more features.
 - I am created this lib because i want use easy logging lib.
-- **Known Bug** : You need to place pylog.py next to the file that uses this lib.
+- ~~**Known Bug** : You need to place pylog.py next to the file that uses this lib.~~
 
 ## Installation
 
@@ -33,7 +33,7 @@
   ```
     import Pylog
     
-    Pylog.logname('Filename.py')
+    Pylog.logname(__file__)
   ```
 - Use the functions you need:
   - Pylog.critical(msg)
@@ -57,6 +57,7 @@
   	  level=50
   	```
   - Change **file_level** number to set level in log file **with** --logfile (50 hide all level).
+  	###### - This option work on --logfile without use --logging (if use --logging file write all level)
   	```
    	  file_level=0
   	```
@@ -75,6 +76,10 @@
 	```
 	  Pylog.error(msg) ; msg = 10
 	```
+ - **in Version 1.2.0** : Important Fixes:
+ 	###### - You don't need to place pylog.py next to the file that uses this lib.
+	###### - file level in logging.conf work on --logfile **without use --logging** (if use --logging file write all level)
+	###### - V 1.2.0 is stable version and ready to use.
 - Level table :
 
     | Level  | Numeric value |
