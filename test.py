@@ -2,7 +2,7 @@
 # Test V 1.2.0
 # Simple Test File
 
-from Pylog import *
+from easylogging import *
 
 ########## very important ############
 logname(__file__)
