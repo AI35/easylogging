@@ -42,7 +42,7 @@
 - Use the functions you need:
   - easylogging.critical(msg)
   - easylogging.error(msg, exc_info) **default: exc_info=False**
-  - easylogging.warning(msg) **or** easylogging.warn(msg)
+  - easylogging.warning(msg)
   - easylogging.info(msg)
   - easylogging.debug(msg)
 - You can start logging from Cmd or PowerShell :
