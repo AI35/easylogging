@@ -1,7 +1,7 @@
 # easylogging
 ###### Simple and Easy Logger lib for python
 
-[![easylogging](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
+[![easylogging](https://img.shields.io/badge/build-Stopped-red.svg)]()
 [![version](https://img.shields.io/badge/version-1.2.0-green.svg)]()
 [![status](https://img.shields.io/badge/status-stable-brightgreen.svg)]()
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/677f082650b54782b947b429dd1c35ce)](https://www.codacy.com/project/alosh.othman55/Pylog/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AI35/Pylog&amp;utm_campaign=Badge_Grade_Dashboard)
@@ -9,7 +9,10 @@
 [![windows](https://img.shields.io/badge/windows-tested-brightgreen.svg)]()
 [![linux](https://img.shields.io/badge/linux-tested-brightgreen.svg)]()
 [![license](https://img.shields.io/badge/license-GNU-blue.svg)](https://github.com/AI35/easylogging/blob/master/LICENSE)
-
+- (v1.3 stopped development) This lib is very simple and poor so its need a lot of development and time to become useful in full projects.
+- v1.2.5 More stable but will not be Published.
+- End : 9 October 2018 , v1.2.0
+- This library **may** come back someday better and more useful.
 ## REQUIREMENTS
 - Python-3 --> http://www.python.org/download/
 
@@ -81,9 +84,11 @@
 	  easylogging.error(msg) ; msg = 10
 	```
  - **in Version 1.2.0** : Important Fixes:
- 	###### - You **don't** need to place easylog.py next to the file that uses this lib.
-	###### - File level in logging.conf work on --logfile **without use --logging** (if use --logging file write all level)
+ 	###### - You **don't** need to place easylogging.py next to the file that uses this lib.
+	###### - File level in logging.conf work on --logfile **without use --logging** (if use --logging file write all level).
 	###### - V 1.2.0 is stable version and ready to use.
+	###### - You can install lib from pip.
+	###### - Change lib name from pylog to easylogging Because pylog already exists in pip.
 - Level table :
 
     | Level  | Numeric value |
