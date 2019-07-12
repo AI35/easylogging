@@ -9,6 +9,7 @@
 [![windows](https://img.shields.io/badge/windows-tested-brightgreen.svg)]()
 [![linux](https://img.shields.io/badge/linux-tested-brightgreen.svg)]()
 [![license](https://img.shields.io/badge/license-GNU-blue.svg)](https://github.com/AI35/easylogging/blob/master/LICENSE)
+# This library has returned with a new version (easylogging2) --> https://github.com/AI35/easylogging2
 - (v1.3 stopped development) This lib is very simple and poor so its need a lot of development and time to become useful in full projects.
 - v1.2.5 More stable but will not be Published.
 - End : 9 October 2018 , v1.2.0
@@ -36,7 +37,7 @@
 	```
 
 ## Usage
-- First you need import lib for your file and Set name :
+- First you need import lib and Set name :
   ```
     import easylogging
     
@@ -93,11 +94,11 @@
 
     | Level  | Numeric value |
     | ------------- | ------------- |
-    | CRITICAL  | 50  |
-    | ERROR  | 40  |
-    | WARNING  | 30  |
-    | INFO  | 20  |
-    | DEBUG  | 10  |
+    | CRITICAL  | < 50  |
+    | ERROR  | < 40  |
+    | WARNING  | < 30  |
+    | INFO  | < 20  |
+    | DEBUG  | < 10  |
     | NOTSET  | 0  |
     
 - You can see test file **test.py** to know how this lib is work.
